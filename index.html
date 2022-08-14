@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Movies || Bootstrap</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="wrapper pt-4">
+				<h1 class="text-center fs-2 fw-bold m-0 mb-4">
+					Movies catalog
+				</h1>
+				<div class="row row-cols-lg-2">
+					<div class="col-12 col-lg-4 p-4">
+						<form class="mb-4" action="https://echo.htmlacademy.ru">
+							<input
+								class="form-control mb-3"
+								type="text"
+								placeholder="Movie name"
+								name="Movie name"
+							/>
+
+							<input
+								class="mb-3 form-control"
+								type="number"
+								name="Number"
+								placeholder="Number"
+							/>
+
+							<select
+								class="form-select mb-3"
+								name="Selected option"
+							>
+								<option selected>All</option>
+								<option value="1">Action</option>
+								<option value="2">Comedy</option>
+								<option value="3">Detective</option>
+								<option value="4">Documentive</option>
+								<option value="5">Drama</option>
+								<option value="6">Horror</option>
+								<option value="7">Science-fiction</option>
+								<option value="8">Romance</option>
+							</select>
+
+							<select
+								class="form-select mb-3"
+								name="Rating preference"
+							>
+								<option selected>Rating (high to low)</option>
+								<option value="1">High</option>
+								<option value="2">Medium</option>
+								<option value="3">Low</option>
+							</select>
+							<button
+								class="btn btn-primary w-100 fs-6 text-light"
+								type="sumbit"
+							>
+								Search
+							</button>
+						</form>
+
+						<div class="card border-0">
+							<h2 class="text-title mb-3">Bookmarked movies</h2>
+							<ul class="list-group">
+								<li class="list-group-item pt-3">
+									<h4 class="fs-5 fw-bold">
+										Avangers: Infinity War
+									</h4>
+									<button
+										class="btn btn-danger"
+										type="button"
+									>
+										Remove
+									</button>
+								</li>
+								<li class="list-group-item pt-3">
+									<h4 class="fs-5 fw-bold">The Avangers</h4>
+									<button
+										class="btn btn-danger"
+										type="button"
+									>
+										Remove
+									</button>
+								</li>
+								<li class="list-group-item pt-3">
+									<h4 class="fs-5 fw-bold">
+										12 Years a Slave
+									</h4>
+									<button
+										class="btn btn-danger"
+										type="button"
+									>
+										Remove
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-lg-8 p-4">
+						<h2 class="text-title fs-4 mb-2">Search result: 39</h2>
+						<div class="alert alert-info mb-3">
+							Use the form on the left to search for a movie
+						</div>
+						<div class="row row-cols-md-2 flex-md-row flex-column">
+							<div class="col mb-4 mb-md-0">
+								<div class="card">
+									<div
+										id="carouselExampleControls"
+										class="carousel slide"
+										data-bs-ride="carousel"
+									>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img
+													style="
+														object-fit: cover;
+														object-position: top;
+													"
+													src="./images/avangers-1.webp"
+													class="d-block w-100"
+													height="220"
+													alt="..."
+												/>
+											</div>
+											<div class="carousel-item">
+												<img
+													style="
+														object-fit: cover;
+														object-position: top;
+													"
+													src="./images/endgame.jpeg"
+													class="d-block w-100"
+													height="220"
+													alt="..."
+												/>
+											</div>
+											<div class="carousel-item">
+												<img
+													style="
+														object-fit: cover;
+														object-position: top;
+													"
+													src="./images/infinity.jpeg"
+													class="d-block w-100"
+													height="220"
+													alt="..."
+												/>
+											</div>
+										</div>
+										<button
+											class="carousel-control-prev"
+											type="button"
+											data-bs-target="#carouselExampleControls"
+											data-bs-slide="prev"
+										>
+											<span
+												class="carousel-control-prev-icon"
+												aria-hidden="true"
+											></span>
+											<span class="visually-hidden"
+												>Previous</span
+											>
+										</button>
+										<button
+											class="carousel-control-next"
+											type="button"
+											data-bs-target="#carouselExampleControls"
+											data-bs-slide="next"
+										>
+											<span
+												class="carousel-control-next-icon"
+												aria-hidden="true"
+											></span>
+											<span class="visually-hidden"
+												>Next</span
+											>
+										</button>
+									</div>
+
+									<div class="card-body">
+										<h3 class="card-title">
+											Avangers: Infinity War
+										</h3>
+										<span
+											class="card-text d-flex align-items-center mb-3"
+										>
+											<i
+												class="fa-solid fa-calendar fs-5 me-1"
+											></i>
+											2018
+										</span>
+										<span
+											class="card-text d-flex align-items-center mb-3"
+										>
+											<i
+												class="fa-solid fa-star fs-5 me-1 text-warning"
+											></i>
+											8.7
+										</span>
+										<div
+											class="links d-flex align-items-center justify-content-evenly flex-wrap"
+										>
+											<a
+												href="https://www.youtube.com/watch?v=6ZfuNTqbHE8"
+												class="btn btn-outline-primary mb-2"
+												target="_blank"
+												>Watch trailer</a
+											>
+											<a
+												href="#"
+												class="btn btn-outline-info mb-2"
+												role="button"
+												data-bs-toggle="modal"
+												data-bs-target="#modal-trigger"
+												>More info</a
+											>
+											<div
+												class="modal fade"
+												id="modal-trigger"
+												tabindex="-1"
+												aria-labelledby="modal-triggerLabel"
+												aria-hidden="true"
+											>
+												<div
+													class="modal-dialog modal-dialog-centered"
+												>
+													<div class="modal-content">
+														<div
+															class="modal-header"
+														>
+															<h5
+																class="modal-title"
+																id="exampleModalLabel"
+															>
+																The Avangers:
+																Infinity War
+															</h5>
+															<button
+																type="button"
+																class="btn-close"
+																data-bs-dismiss="modal"
+																aria-label="Close"
+															></button>
+														</div>
+														<div class="modal-body">
+															As the Avengers and
+															their allies have
+															continued to protect
+															the world from
+															threats too large
+															for any one hero to
+															handle, a new danger
+															has emerged from the
+															cosmic shadows:
+															Thanos. A despot of
+															intergalactic
+															infamy, his goal is
+															to collect all six
+															Infinity Stones,
+															artifacts of
+															unimaginable power,
+															and use them to
+															inflict his twisted
+															will on all of
+															reality. Everything
+															the Avengers have
+															fought for has led
+															up to this moment,
+															the fate of Earth
+															and existence has
+															never been more
+															uncertain.
+														</div>
+														<div
+															class="modal-footer"
+														>
+															<button
+																type="button"
+																class="btn btn-secondary"
+																data-bs-dismiss="modal"
+															>
+																Close
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a
+												href="#"
+												class="btn btn-outline-success mb-2"
+												>Bookmarks</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="card">
+									<div
+										id="carouselExampleIndicators"
+										class="carousel slide"
+										data-bs-ride="carousel"
+									>
+										<div class="carousel-indicators">
+											<button
+												type="button"
+												data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="0"
+												class="active"
+												aria-current="true"
+												aria-label="Slide 1"
+											></button>
+											<button
+												type="button"
+												data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="1"
+												aria-label="Slide 2"
+											></button>
+											<button
+												type="button"
+												data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="2"
+												aria-label="Slide 3"
+											></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img
+													style="
+														object-fit: cover;
+														object-position: center;
+													"
+													src="./images/avangers.jpeg"
+													class="d-block w-100"
+													alt="..."
+													width="360"
+													height="220"
+												/>
+											</div>
+											<div class="carousel-item">
+												<img
+													style="
+														object-fit: cover;
+														object-position: center;
+													"
+													src="./images/endgame.webp"
+													class="d-block w-100"
+													alt="..."
+													width="360"
+													height="220"
+												/>
+											</div>
+											<div class="carousel-item">
+												<img
+													style="
+														object-fit: cover;
+														object-position: center;
+													"
+													src="./images/infinity-war.jpg"
+													class="d-block w-100"
+													alt="..."
+													width="360"
+													height="220"
+												/>
+											</div>
+										</div>
+										<button
+											class="carousel-control-prev"
+											type="button"
+											data-bs-target="#carouselExampleIndicators"
+											data-bs-slide="prev"
+										>
+											<span
+												class="carousel-control-prev-icon"
+												aria-hidden="true"
+											></span>
+											<span class="visually-hidden"
+												>Previous</span
+											>
+										</button>
+										<button
+											class="carousel-control-next"
+											type="button"
+											data-bs-target="#carouselExampleIndicators"
+											data-bs-slide="next"
+										>
+											<span
+												class="carousel-control-next-icon"
+												aria-hidden="true"
+											></span>
+											<span class="visually-hidden"
+												>Next</span
+											>
+										</button>
+									</div>
+
+									<div class="card-body">
+										<h3 class="card-title">The Avangers</h3>
+										<span
+											class="card-text d-flex align-items-center mb-3"
+										>
+											<i
+												class="fa-solid fa-calendar fs-5 me-1"
+											></i>
+											2012
+										</span>
+										<span
+											class="card-text d-flex align-items-center mb-3"
+										>
+											<i
+												class="fa-solid fa-star fs-5 me-1 text-warning"
+											></i>
+											8.1
+										</span>
+										<div
+											class="links d-flex align-items-center justify-content-evenly flex-wrap"
+										>
+											<a
+												href="https://www.youtube.com/watch?v=eOrNdBpGMv8"
+												class="btn btn-outline-primary mb-2"
+												target="_blank"
+												>Watch trailer</a
+											>
+											<a
+												href="#"
+												class="btn btn-outline-info mb-2"
+												data-bs-toggle="modal"
+												data-bs-target="#card-2"
+												role="button"
+												>More info</a
+											>
+											<div
+												class="modal fade"
+												id="card-2"
+												tabindex="-1"
+												aria-labelledby="card-2Label"
+												aria-hidden="true"
+											>
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div
+															class="modal-header"
+														>
+															<h5
+																class="modal-title"
+																id="exampleModalLabel"
+															>
+																The Avangers
+															</h5>
+															<button
+																type="button"
+																class="btn-close"
+																data-bs-dismiss="modal"
+																aria-label="Close"
+															></button>
+														</div>
+														<div class="modal-body">
+															Loki, the adopted
+															brother of Thor,
+															teams-up with the
+															Chitauri Army and
+															uses the Tesseract's
+															power to travel from
+															Asgard to Midgard to
+															plot the invasion of
+															Earth and become a
+															king. The director
+															of the agency
+															S.H.I.E.L.D., Nick
+															Fury, sets in motion
+															project Avengers,
+															joining Tony Stark
+															a.k.a. the Iron Man;
+															Steve Rogers, a.k.a.
+															Captain America;
+															Bruce Banner, a.k.a.
+															The Hulk; Thor;
+															Natasha Romanoff,
+															a.k.a. Black Widow;
+															and Clint Barton,
+															a.k.a. Hawkeye, to
+															save the world from
+															the powerful Loki
+															and the alien
+															invasion.
+														</div>
+														<div
+															class="modal-footer"
+														>
+															<button
+																type="button"
+																class="btn btn-secondary"
+																data-bs-dismiss="modal"
+															>
+																Close
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a
+												href="#"
+												class="btn btn-outline-success mb-2"
+												>Bookmarks</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex justify-content-center mt-5">
+							<div
+								class="btn-group"
+								role="group"
+								aria-label="Group of buttons"
+							>
+								<button class="btn btn-outline-primary active">
+									1
+								</button>
+								<button class="btn btn-outline-primary">
+									2
+								</button>
+								<button class="btn btn-outline-primary">
+									3
+								</button>
+								<button class="btn btn-outline-primary">
+									4
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/main.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
